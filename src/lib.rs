@@ -1,16 +1,15 @@
 pub mod contract;
-pub mod msg;
-pub mod state;
 pub mod expiration;
+mod inventory;
 pub mod mint_run;
+pub mod msg;
+mod rand;
 pub mod receiver;
 pub mod royalties;
+pub mod state;
 pub mod token;
 pub mod utils;
 mod viewing_key;
-mod inventory;
-mod rand;
-
 
 #[cfg(target_arch = "wasm32")]
 mod wasm {
